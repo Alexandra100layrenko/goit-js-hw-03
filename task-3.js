@@ -3,7 +3,7 @@ function filterArray(numbers, value){
   /*for (const = i; i > numbers.length; i++){}*/
     for (const element of filterArray){
         if (numbers[i] > value){
-            filteredNumbers.push(numbers[i]);
+            return tfilteredNumbers.push(numbers[i]);
         }
     }
 }
