@@ -1,18 +1,17 @@
 function filterArray(numbers, value){
-    const tfilteredNumbers = [];
+    const filteredNumbers = [];
     for (let i = 0; i < numbers.length; i++){
-        const tfilteredNumbers = [];
-
         if (numbers[i] > value){
-            return tfilteredNumbers.push(numbers[i]);
+            filteredNumbers.push(numbers[i]);
         }
     }
+    return filteredNumbers;
 }
 /* function filterArray(numbers, value){
-    const tfilteredNumbers = [];
+    const filteredNumbers = [];
     for (const element of filterArray){
         if (element > value){
-            return tfilteredNumbers.push(element);
+            return filteredNumbers.push(element);
         }
     }*/
 
