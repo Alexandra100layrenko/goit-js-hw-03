@@ -1,15 +1,8 @@
-function formatMessage(message, maxLength){
-    if (message.length <= maxLength){
-        return message;
-    }
-    else if(message.length >= maxLength){
-        return message.slice(0, maxLength) + "...";
+function makeArray(firstArray, secondArray, maxLength){
+    const combinedArray = firstArray.concat(secondArray);
+    if (combinedArray.length > maxLength){
+        return combinedArray.slice(0, maxLength);
+    } else {
+        return combinedArray;
     }
 }
-
-console.log(formatMessage("Curabitur ligula sapien", 16));
-console.log(formatMessage("Curabitur ligula sapien", 23));
-console.log(formatMessage("Vestibulum facilisis purus nec", 20));
-console.log(formatMessage("Vestibulum facilisis purus nec", 30));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))
